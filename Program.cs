@@ -7,7 +7,16 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var numStack = new Stack<int>();
+            numStack.Push(23);
+            numStack.Push(42);
+            numStack.Push(1000);
+            
+            Console.WriteLine(numStack.Pop());
+            Console.WriteLine(numStack.Pop());
+            Console.WriteLine(numStack.Pop());
+
+
         }
     }
 }
